@@ -1,0 +1,139 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+.content {
+    padding: 1rem;
+}
+section {
+    text-align: center;
+}
+
+section p {
+    color: #666;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+form {
+    margin: 10px 0;
+}
+
+img {
+    margin-top: 1.5em;
+}
+
+form .list {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+}
+.list > label {
+    flex-basis: calc(100% / 3);
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 20px;
+    /* display: flex; */
+}
+label > svg {
+    display: inline-block;
+    width: auto;
+    /* margin: auto; */
+}
+.cls-1 {
+    fill: #fff;
+    stroke: #000;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 8.5px;
+}
+.button__wrap {
+    width: 100%;
+    text-align: center;
+}
+.button__wrap > button[type="button"] {
+    margin: 10px auto 0;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#myHand,
+#rivalHand {
+    width: 50%;
+    height: 60px;
+    float: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#result {
+    clear: both;
+    /* background: #aaa; */
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 48px;
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+#return {
+    margin-top: 20px;
+}
+input + label {
+    text-align: center;
+}
+
+/*===自分の手が未選択状態===*/
+#Hand_0 + label {
+    background-color: #500;
+}
+
+#Hand_1 + label {
+    background-color: #050;
+}
+
+#Hand_2 + label {
+    background-color: #005;
+}
+
+/*===自分の手を選択したときのアクション:checked===*/
+/*===自分の手を選択したときのアクション:hover===*/
+#Hand_0:checked + label,
+#Hand_0 + label:hover {
+    background-color: #f00;
+}
+
+#Hand_1:checked + label,
+#Hand_1 + label:hover {
+    background-color: #0f0;
+}
+
+#Hand_2:checked + label,
+#Hand_2 + label:hover {
+    background-color: #00f;
+}
+
+/*===自分の手を選択したときのアクション:active===*/
+/*===自分の手を選択したときのアクション:focus===*/
+#Hand_0 + label:active,
+#Hand_0 + label:focus {
+    background: #c99;
+}
+
+#Hand_1 + label:active,
+#Hand_1 + label:focus {
+    background: #9c9;
+}
+
+#Hand_2 + label:active,
+#Hand_2 + label:focus {
+    background: #99c;
+}

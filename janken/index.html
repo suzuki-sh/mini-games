@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>JQueryでジャンケン対決</title>
+        <link href="./css/main.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="./js/index.js"></script>
+    </head>
+
+    <body>
+        <div class="in_body">
+            <div class="tonbo">
+                <div class="content">
+                    <section>
+                        <form id="select" class="clearfix">
+                            <div class="list">
+                                <input
+                                    name="Hand"
+                                    type="radio"
+                                    autofocus
+                                    id="Hand_0"
+                                    form="select"
+                                    value="g"
+                                />
+                                <label for="Hand_0">
+                                    <img src="./img/hand_g.svg" alt="">
+                                </label>
+                                <input
+                                    name="Hand"
+                                    type="radio"
+                                    id="Hand_1"
+                                    form="select"
+                                    value="c"
+                                />
+                                <label for="Hand_1">
+                                    <img src="./img/hand_c.svg" alt="">
+                                </label>
+                                <input
+                                    name="Hand"
+                                    type="radio"
+                                    id="Hand_2"
+                                    form="select"
+                                    value="p"
+                                />
+                                <label for="Hand_2">
+                                    <img src="./img/hand_p.svg" alt="">
+                                </label>
+                            </div>
+                            <div class="button__wrap">
+                                <button
+                                    type="button"
+                                    name="battle"
+                                    id="battle"
+                                    value=""
+                                >
+                                    ジャンケンポン
+                                </button>
+                            </div>
+                        </form>
+                        <p id="myHand"></p>
+                        <p id="rivalHand"></p>
+                        <p id="result"></p>
+                    </section>
+                </div>
+            </div>
+            <!--class="tonbo"-->
+        </div>
+    </body>
+</html>
