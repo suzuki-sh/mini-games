@@ -29,13 +29,17 @@ function mazeCreater(){
 }
 
 function startPointSetter(){
-    //スタート地点を決定
     block[2][2] = 1;
 }
 
 function goalPointSetter(){
-    //ゴールを地点を決定
     block[sizeNum - 1][sizeNum - 1] = 1
+}
+
+function mazeRender(stageArray){
+    // レンダリングロジック
+    // 親要素を取得
+    let stageTable = document.getElementById('maze-stage');
 }
 
 function mazeChecker(stageArray){
@@ -44,15 +48,20 @@ function mazeChecker(stageArray){
     })
 }
 
-function main(){
+function initialize(){
     sizeAdjuster();
     stageCreater(block);
-    mazeCreater();
+    // mazeCreater();
     startPointSetter();
     goalPointSetter();
     mazeChecker(block);
 }
 
+function main(){
+    // mazeRender(block);
+}
+
 window.onload = () => {
+    initialize();
     main();
 }
