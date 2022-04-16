@@ -40,6 +40,9 @@ function mazeRender(stageArray){
     // レンダリングロジック
     // 親要素を取得
     let stageTable = document.getElementById('maze-stage');
+    stageArray.forEach((row) => {
+        stageTable.insertAdjacentHTML('beforeend', `<tr>${row}</tr>`);
+    });
 }
 
 function mazeChecker(stageArray){
