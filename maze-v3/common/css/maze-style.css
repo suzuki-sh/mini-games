@@ -1,0 +1,51 @@
+@charset "utf-8";
+#maze {
+	width: 480px;
+	min-height: 480px;
+	margin: 0 auto;
+	padding: 20px;
+	background: #ddd;
+}
+section{
+	width:auto;
+	text-align: center;
+}
+#maze h1{
+	font-weight: bold;
+	font-size: 200%;
+	margin: 0 0 0.5em;
+}
+#maze table{
+	margin: 0 auto;
+}
+#maze td{
+	width: 1em;
+	height: 1em;
+	line-height: 1.2;
+	padding: 5px;
+	text-align: center;
+	vertical-align: middle;
+}
+#maze .blackBlock{
+	background-color: #000;
+	color: #333;
+}
+#maze .whiteBlock{
+	background-color: #fff;
+	color: #eee;
+}
+#maze #start{
+	background-color: #faa;
+	color: #faa;
+}
+#maze #goal{
+	background-color: #aaf;
+	color: #aaf;
+}
+.control{
+margin-top: 20px;
+}
+
+#cullentPosition{
+	background-color: #aaa!important;
+}
